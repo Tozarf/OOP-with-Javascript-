@@ -31,6 +31,7 @@ class Triangle extends Shapes {
         console.log(this.typeOfTriangle);
     }
     childrenShapeName() {
+        console.log("\nFrom children class Triangle\n");
         console.log(
             "This was a parent method response, the child response is displayed below:"
         );
@@ -42,5 +43,23 @@ class Triangle extends Shapes {
         );
     }
 }
+class Rectangle extends Shapes {
+    constructor(name, type, sidesNum, sidesLength, typeOfRectangle) {
+        super(name, type, sidesNum, sidesLength);
+        this.typeOfRectangle = typeOfRectangle;
+    }
+    getType() {
+        console.log(this.typeOfRectangle);
+    }
+    childrenShapeName() {
+        console.log("\nFrom children class Rectangle\n");
+        console.log(
+            "This was a parent method response, it suffered mutation in this Rectangle class:"
+        );
+        console.log(
+            `I have access in this class, for instance, to the type of rectangle, take a look: ${this.typeOfRectangle}`
+        );
+    }
+}
 
-module.exports = { Shapes, Triangle };
+module.exports = { Shapes, Triangle, Rectangle };
