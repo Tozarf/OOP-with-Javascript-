@@ -1,6 +1,6 @@
 # OOP EXAMPLE with JS
 
-The classes (parent and children) can be found in the [OOP.js](https://github.com/Tozarf/OOP-with-Javascript-/blob/main/OOP.js) file. Nonetheless, their instantiation and the whole execution of the program belongs to the [index.js](https://github.com/Tozarf/OOP-with-Javascript-/blob/main/index.js) file.
+The classes (parent and children) can be found in the [OOP](https://github.com/Tozarf/OOP-with-Javascript-/blob/main/OOP.js) folder. Nonetheless, their instantiation and the whole execution of the program belongs to the [index.js](https://github.com/Tozarf/OOP-with-Javascript-/blob/main/index.js) file.
 
 ## Execution
 
