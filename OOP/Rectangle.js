@@ -1,27 +1,29 @@
 const { Shape } = require("./Shape");
 
 class Rectangle extends Shape {
+    #width;
+    #length;
     constructor(color, filled, width = 1.0, length = 1.0) {
         super(color, filled);
-        this.width = width;
-        this.length = length;
+        this.#width = width;
+        this.#length = length;
     }
     getWidth() {
-        return this.width;
+        return this.#width.toFixed(1);
     }
     setWidth(newWidth) {
-        this.width = newWidth;
-        return this.width;
+        this.#width = newWidth;
+        return this.#width.toFixed(1);
     }
     getLength() {
-        return this.length;
+        return this.#length.toFixed(1);
     }
     setLength(newLength) {
-        this.length = newLength;
-        return this.length;
+        this.#length = newLength;
+        return this.#length.toFixed(1);
     }
     getArea() {
-        const area = this.width * this.length;
+        const area = this.#width * this.#length;
         return area.toFixed(1);
     }
     getPerimeter() {
@@ -29,7 +31,11 @@ class Rectangle extends Shape {
         return perimeter.toFixed(1);
     }
     toString() {
-        return `Shape { Rectangle ${JSON.stringify(this)} }`;
+        const color = super.getColor();
+        const filled = super.isFilled();
+        return `Rectangle [ Shape [ color = ${color}, filled = ${filled}] width = ${
+            this.#width
+        }, length = ${this.#length}]`;
     }
 }
 module.exports = { Rectangle };

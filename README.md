@@ -1,13 +1,13 @@
 # OOP EXAMPLE with JS
 
-The classes (parent and children) can be found in the [OOP](https://github.com/Tozarf/OOP-with-Javascript-/tree/main/OOP) folder. Nonetheless, their instantiation and the whole execution of the program belongs to the [index.js](https://github.com/Tozarf/OOP-with-Javascript-/blob/main/index.js) file.
+The classes (parent and children) can be found in the [OOP](https://github.com/Tozarf/OOP-with-Javascript-/tree/main/OOP) folder. Nonetheless, their instantiation and the whole execution of the testsbelongs to the [tests](to be defined) folder.
 
-## Execution
+## Testing
 
-Use the following command to run the program.(Make sure you are pointing to the index.js file)
+Use the following command to run the program.(Make sure you are pointing to one of the tests files)
 
 ```bash
-node index.js
+node <test file relative path>
 ```
 
 ## Disclaimer

@@ -3,29 +3,34 @@ const { Rectangle } = require("./Rectangle");
 class Square extends Rectangle {
     constructor(color, filled, side) {
         super(color, filled);
-        this.side = side;
+        this.width = side;
+        this.length = side;
     }
     getSide() {
-        return this.side;
+        return this.width.toFixed(1);
+    }
+    setSide(newSideLength) {
+        this.width = newSideLength;
+        this.length = newSideLength;
     }
     setWidth(newWidth) {
-        this.side = newWidth;
-        return this.side;
+        this.setSide(newWidth);
     }
     setLength(newLength) {
-        this.side = newLength;
-        return this.side;
+        this.setSide(newLength);
     }
     getArea() {
-        const area = this.side * this.side;
+        const area = this.width * this.length;
         return area.toFixed(1);
     }
     getPerimeter() {
-        const perimeter = this.side * 4;
+        const perimeter = this.width * 4;
         return perimeter.toFixed(1);
     }
     toString() {
-        return ` Square { Rectangle { Shape ${JSON.stringify(this)} } }`;
+        const color = super.getColor();
+        const filled = super.isFilled();
+        return `Square [ Rectangle [ Shape [ color = ${color}, filled = ${filled}] width = ${this.width}, length = ${this.length}]]`;
     }
 }
 module.exports = { Square };
