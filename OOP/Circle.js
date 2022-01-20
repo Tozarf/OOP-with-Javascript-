@@ -9,8 +9,8 @@ class Circle extends Shape {
     getRadius() {
         return this.#radius;
     }
-    setRadius(newradius) {
-        this.#radius = newradius;
+    setRadius(radius) {
+        this.#radius = radius;
         return this.#radius;
     }
     getArea() {
