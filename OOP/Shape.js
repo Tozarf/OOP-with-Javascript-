@@ -9,8 +9,8 @@ class Shape {
     getColor() {
         return this.#color;
     }
-    setColor(newColor) {
-        this.#color = newColor;
+    setColor(color) {
+        this.#color = color;
         return this.#color;
     }
 
@@ -18,8 +18,8 @@ class Shape {
         return this.#filled;
     }
 
-    setFilled(fill) {
-        this.#filled = fill;
+    setFilled(filled) {
+        this.#filled = filled;
         return this.#filled;
     }
     getArea() {}

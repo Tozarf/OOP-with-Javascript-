@@ -2,15 +2,15 @@ const { Shape } = require("./Shape");
 
 class Triangle extends Shape {
     #sideLength;
-    constructor(color, filled, side) {
+    constructor(color, filled, sideLength) {
         super(color, filled);
-        this.#sideLength = side;
+        this.#sideLength = sideLength;
     }
     getSideLength() {
         return this.#sideLength.toFixed(1);
     }
-    setSideLength(newSideLength) {
-        this.#sideLength = newSideLength;
+    setSideLength(sidelength) {
+        this.#sideLength = sidelength;
     }
     getArea() {
         const area = (Math.sqrt(3) * this.#sideLength ** 2) / 4;

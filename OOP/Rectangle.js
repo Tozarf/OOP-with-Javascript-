@@ -11,15 +11,15 @@ class Rectangle extends Shape {
     getWidth() {
         return this.#width.toFixed(1);
     }
-    setWidth(newWidth) {
-        this.#width = newWidth;
+    setWidth(width) {
+        this.#width = width;
         return this.#width.toFixed(1);
     }
     getLength() {
         return this.#length.toFixed(1);
     }
-    setLength(newLength) {
-        this.#length = newLength;
+    setLength(length) {
+        this.#length = length;
         return this.#length.toFixed(1);
     }
     getArea() {

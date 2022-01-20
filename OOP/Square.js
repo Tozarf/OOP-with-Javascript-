@@ -9,15 +9,15 @@ class Square extends Rectangle {
     getSide() {
         return this.width.toFixed(1);
     }
-    setSide(newSideLength) {
-        this.width = newSideLength;
-        this.length = newSideLength;
+    setSide(side) {
+        this.width = side;
+        this.length = side;
     }
-    setWidth(newWidth) {
-        this.setSide(newWidth);
+    setWidth(side) {
+        this.setSide(side);
     }
-    setLength(newLength) {
-        this.setSide(newLength);
+    setLength(length) {
+        this.setSide(length);
     }
     getArea() {
         const area = this.width * this.length;
